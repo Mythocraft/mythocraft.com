@@ -1,0 +1,90 @@
+.mytho-background-img {
+    display: inline-block;
+    background-image: url('https://www.xtrafondos.com/wallpapers/universo-espacio-interestelar-2898.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@keyframes spinner-index-border {
+    to {
+        transform: rotate(360deg) /* rtl:ignore */
+    }
+}
+
+.spinner-index-border, .spinner-mytho-grow {
+    display:inline-block;
+    background-color: var(--wh);
+    background-size: 7rem;
+    width: 7rem;
+    height: 7rem;
+    vertical-align: -.125em;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#Ico-load {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+}
+
+.spinner-mytho-grow {
+    opacity: 0;
+    animation: .75s linear infinite spinner-mytho-grow;
+    box-shadow: -.1rem 0 1rem .2rem var(--c1), .1rem 0 1rem .2rem var(--c3);
+}
+
+.spinner-index-border {
+    animation: .75s linear infinite spinner-index-border;
+    box-shadow: -.2rem 0 1rem .2rem var(--c1), .2rem 0 1rem .2rem var(--c3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .spinner-index-border, .spinner-mytho-grow {
+        animation-duration:1.5s
+    }
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.ani-bg-loading {
+    width: 9rem;
+    height: 9rem;
+    position: relative;
+}
+
+.mythologo {
+    height: 20vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.bg-mythologo {
+    height: 13rem;
+    background-image: url("../img/mythologo.png");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+h5.mytho-paragraph {
+    border: 1rem solid transparent;
+    border-radius: 1rem;
+    color: var(--c2);
+    background-color: var(--c4-d);
+    box-shadow: 0rem 0rem 1rem .1rem black;
+}

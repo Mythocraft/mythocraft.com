@@ -1,0 +1,104 @@
+* {
+    font-family: "Inter"
+}
+:root {
+    --c0: #FFFFFF;
+    --c1: #CD72DC;
+    --c2: #5394B0;
+    --c3: #3B6EAA;
+    --c4: #000000;
+    --c0-d: rgba(255,255,255,0.75);
+    --c1-d: rgba(205,114,220,0.75);
+    --c2-d: rgba(83,148,176,0.75);
+    --c3-d: rgba(59,110,170,0.75);
+    --c4-d: rgba(0,0,0,0.75);
+}
+
+.alert-success {
+    color:#0f5132;
+    background-color:#d1e7dd;
+    border-color:#badbcc
+}
+
+.alert-success .alert-link {
+    color:#0c4128
+}
+
+.mytho-bg {
+    background-color: var(--c4);
+}
+
+.rect-form-top {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 5vh;
+    background: #3B6EAA;
+    box-shadow: 0rem 6rem 0.5rem .5rem black;
+    -webkit-box-shadow: 1px 13px 5px 0px black;
+    -moz-box-shadow: 1px 13px 5px 0px black;
+}
+
+.rect-form-bottom {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 5vh;
+    background: #3B6EAA;
+    box-shadow: 0rem -6rem 0.5rem .5rem black;
+    -webkit-box-shadow: 1px -13px 5px 0px black;
+    -moz-box-shadow: 1px -13px 5px 0px black;
+}
+
+.mytho-info-bg {
+    background-color: var(--c2-d);
+    height: 12rem;
+}
+
+.mytho-paragraph {
+    color: var(--c0);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 0rem 0.2rem 0.2rem black;
+}
+
+.pic-height {
+    height: 60vh;
+}
+
+.btn-row {
+    margin-top: 12vh;
+}
+
+.mytho-sh-btn {
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: var(--c1);
+    box-shadow: 0rem 0.125rem 0rem 0.2rem var(--c4);
+}
+
+.mytho-sh-btn {
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: var(--c1);
+    box-shadow: 0rem 0.125rem 0rem 0.2rem var(--c4);
+}
+
+.mytho-sh-btn:hover {
+    background-color: var(--c3-d);
+    color: var(--c2);
+}
+
+.col-4 a, .col-3 a {
+    text-decoration: inherit;
+    color: var(--c0);
+    font-weight: bold;
+}
+
+footer.bg-mytho-1 {
+    background-color: var(--c2);
+}
